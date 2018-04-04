@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #4c8bef;
+	font-family: Roboto, sans-serif;
+	text-align:center;
+}
+
+
+.play_now {
+	width: 600px;
+	margin-top: 140px;
+	margin-left: 330px;
+}
+
+td a {
+	margin-top: -40px;
+	font-size: 22px;
+	color: #FFF;
+	font-weight: 900;
+}
+
+span {
+	font-size: 18px;
+	font-weight: 700;
+	color: #FFF;
+	text-align: center;
+}
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tic-Tac-Toe</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="jquery-3.3.1.js"></script>
+	<script src="game.js"></script>
+</head>
+<body>
+	
+	<div class="play_now" id="start-screen">
+		<table>
+			<tbody>
+				<tr align="center">
+					<td colspan="3">
+						<a>JOGO DA VELHA DO IRMÃO DO JOREL</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="img/Vovo_Juju.png" alt="player-1"><br>
+						<input id="name_player1" type="text" maxlength="10" placeholder="Vovó do Jorel 1" style="border:0px;">
+					</td>
+					<td> 
+						<img id="play_now" src="img/button.png" width="220px;" alt="play now" style="margin:20px; cursor: pointer;">
+					</td>
+					<td>
+						<img src="img/Vovó_Gigi.png" alt="player-2"><br>
+						<input id="name_player2" type="text" maxlength="10" placeholder="Vovó do Jorel 2" style="border:0px;">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<div id="start-game" style=" display: none; margin-top: 50px; text-align:center;">
+		<div style="display:inline-block;"> 
+			<img src="img/Vovo_Juju.png" alt="player-1" style="width:160px;margin-right:20px;">
+			<br>
+			<span id="player1" style="margin-right:20px;"></span>
+		</div>
+
+		<div style="display:inline-block;">
+			<table border="0">
+					<tr>
+						<td style="border-bottom: solid 5px #fff; border-right: solid 5px #fff;">
+							<div class="move" id="a-1" style="width:100px;height:100px;"></div>
+						</td>
+
+						<td style="border-bottom: solid 5px #fff; border-right: solid 5px #fff;">
+							<div class="move" id="a-2" style="width:100px;height:100px;"></div>
+						</td>
+
+						<td style="border-bottom: solid 5px #fff;">
+							<div class="move" id="a-3" style="width:100px;height:100px;"></div>
+						</td>
+					</tr>
+					<tr>
+						<td style="border-bottom: solid 5px #fff; border-right: solid 5px #fff;">
+							<div class="move" id="b-1" style="width:100px;height:100px;"></div>
+						</td>
+
+						<td style="border-bottom: solid 5px #fff; border-right: solid 5px #fff;">
+							<div class="move" id="b-2" style="width:100px;height:100px;"></div>
+						</td>
+
+						<td style="border-bottom: solid 5px #fff;">
+							<div class="move" id="b-3" style="width:100px;height:100px;"></div>
+						</td>
+					</tr>
+					<tr>
+						<td style="border-right: solid 5px #fff;">
+							<div class="move" id="c-1" style="width:100px;height:100px;"></div>
+						</td>
+
+						<td style="border-right: solid 5px #fff;">
+							<div class="move" id="c-2" style="width:100px;height:100px;"></div>
+						</td>
+
+						<td>
+							<div class="move" id="c-3" style="width:100px;height:100px;"></div>
+						</td>
+					</tr>
+				</table>	
+		</div>
+
+		<div style="display:inline-block;">
+			<img src="img/Vovó_Gigi.png" alt="player-2" style="width:160px;margin-left: 20px;">
+			<br>
+			<span id="player2" style="margin-left: 20px;"></span>
+		</div>
+	</div>
+
+</body>
+</html>
